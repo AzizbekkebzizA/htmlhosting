@@ -1,0 +1,58 @@
+.loader-3 {
+    width: 40rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: relative;
+    animation: animateLoader3 2s ease-out infinite;
+    transition: all .3s ease-in-out;
+}
+
+
+
+.circle:nth-child(1) {
+    background-color: blue;
+}
+
+.circle:nth-child(2) {
+    background-color: blue;
+    animation-delay: 0.5s;
+}
+
+.circle:nth-child(3) {
+    background-color: blue;
+    animation-delay: 1s;
+}
+
+.circle:nth-child(4) {
+    background-color: blue;
+    animation-delay: 1.5s;
+}
+
+.circle:nth-child(5) {
+    background-color: blue;
+    animation-delay: 2s;
+}
+
+@keyframes animateLoader3 {
+    0% {
+        transform: scale(2rem);
+        background-color: aqua;
+    }
+
+    50% {
+        transform: scale(1.4);
+        background-color: blue;
+    }
+
+    100% {
+        transform: scale(2rem);
+        background-color: aqua;
+    }
+}
