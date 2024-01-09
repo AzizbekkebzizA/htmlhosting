@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diagnostika fanidan test</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/grilish.css">
 </head>
+
 <body>
     <div class="container">
         <div class="row">
             <div class="col-12 p-4">
                 <form action="#" name="from-test">
-                    <div><h2 class="mb-4">Diagnostika fanidan test</h2></div>
+                    <div>
+                        <h2 class="mb-4">Diagnostika fanidan test</h2>
+                    </div>
                     <div class="test-content">
                     </div>
                     <div>
@@ -22,9 +27,14 @@
                         <h5>Natija:</h5>
                         <div>To'g'ri javoblar soni: <span class="correct"></span></div>
                         <div>Noto'g'ri javoblar soni: <span class="incorrect"></span></div>
-                        <div class="box-one">
-                            <div id="user-progess" class="box"></div>
+                        <div class="gold">
+                        <button class="start">START</button>
+                        <h2>0:0</h2>
+                        <div class="progress-bar">
+                            <span class="percent">100%</span>
+                            <div class="bar"></div>
                         </div>
+                    </div>
                         <div>Baho:<span class="mark"></span></div>
                     </div>
                 </form>
@@ -33,4 +43,5 @@
     </div>
     <script src="js/grilish.js"></script>
 </body>
+
 </html>

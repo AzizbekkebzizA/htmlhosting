@@ -124,3 +124,34 @@ function timeout() {
         }
     }
 }
+let btnStart = document.querySelector(".start");
+        let btnStop = document.querySelector(".stop");
+        let bar = document.querySelector(".bar");
+        let h2 = document.querySelector("h2");
+        let percent = document.querySelector(".percent");
+
+        let time = 0.4;
+        const fullTime = time * 60;
+        let timeSec = fullTime;
+        let timer;
+
+        function updateTime() {
+            let minMil = parseInt(timeSec / 60);
+            let secMil = timeSec % 60;
+            let width = (timeSec * 100) / fullTime;
+
+            percent.innerHTML = parseInt(width) + "%";
+            bar.style.width = width + "%";
+            h2.innerHTML = minMil + ":" + secMil;
+
+            if (timeSec == 0) {
+                clearTimeout(timer);
+                return;
+            }
+
+            timeSec--;
+
+            timer = setTimeout(updateTime, 1000);
+        }
+
+        btnStart.addEventListener("click", updateTime);;
